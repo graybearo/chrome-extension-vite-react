@@ -1,0 +1,58 @@
+{
+	"name": "chrome-extension-vite-react",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Chrome extension boilerplate — Manifest V3 starter with Vite, React, TypeScript, hot module reload, typed message passing, and service worker keepalive. Works in Chrome, Edge, and Firefox.",
+	"keywords": [
+		"chrome-extension",
+		"browser-extension",
+		"chrome-extension-boilerplate",
+		"chrome-extension-starter",
+		"chrome-extension-template",
+		"extension-boilerplate",
+		"mv3",
+		"manifest-v3",
+		"vite",
+		"vite-plugin",
+		"react",
+		"typescript",
+		"web-extension",
+		"webextension",
+		"crxjs",
+		"hmr",
+		"hot-reload"
+	],
+	"author": "graybear",
+	"license": "MIT",
+	"homepage": "https://github.com/graybearo/chrome-extension-vite-react#readme",
+	"bugs": "https://github.com/graybearo/chrome-extension-vite-react/issues",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/graybearo/chrome-extension-vite-react.git"
+	},
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc --noEmit && vite build",
+		"build:firefox": "BROWSER=firefox vite build",
+		"preview": "vite preview",
+		"typecheck": "tsc --noEmit",
+		"zip": "node scripts/zip.mjs"
+	},
+	"dependencies": {
+		"mv3-keepalive": "^0.1.0",
+		"mv3-message-router": "^0.1.0",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1"
+	},
+	"devDependencies": {
+		"@crxjs/vite-plugin": "^2.0.0-beta.28",
+		"@types/chrome": "^0.0.280",
+		"@types/node": "^22.9.0",
+		"@types/react": "^18.3.12",
+		"@types/react-dom": "^18.3.1",
+		"@vitejs/plugin-react": "^4.3.3",
+		"typescript": "^5.6.0",
+		"vite": "^5.4.10"
+	}
+}
